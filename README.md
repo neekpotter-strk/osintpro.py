@@ -34,6 +34,46 @@ python threat_recon.py -d example.com
  - labs.tryhackme.com
  - api.tryhackme.com
 
+🔧 Setup & Run
+1. Clone the Repository
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+
+2. Create & Activate Virtual Environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+
+3. Install Requirements
+pip install -r requirements.txt
+
+4. Add Your API Keys
+
+Open config.json (or .env if you’re using it).
+
+Add your API keys for services (VirusTotal, AbuseIPDB, OTX, etc.).
+
+Example:
+
+{
+  "virustotal": "your_api_key_here",
+  "abuseipdb": "your_api_key_here"
+}
+
+5. Run the Tool
+python main.py -d example.com
+
+6. Example Commands
+
+Scan domain:
+
+python main.py -d example.com
+
+
+Scan IP:
+
+python main.py -i 8.8.8.8
+
 ⚠️ Notes
 
 Some APIs (e.g., BufferOver, ThreatCrowd) may no longer work or require manual fixes due to deprecated endpoints / SSL issues.
