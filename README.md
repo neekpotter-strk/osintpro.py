@@ -40,14 +40,15 @@ git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>
 
 2. Create & Activate Virtual Environment (optional but recommended)
+
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 
-3. Install Requirements
+4. Install Requirements
 pip install -r requirements.txt
 
-4. Add Your API Keys
+5. Add Your API Keys
 
 Open config.json (or .env if you’re using it).
 
